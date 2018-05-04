@@ -2,10 +2,14 @@
 ul, li {
   list-style: none;
 }
+html {
+  font-family: "Raleway-SemiBold", "Helvetica Neue",Helvetica,Arial,sans-serif;
+  color: #6c7380;
+}
 .topbg {
-  height: 35px;
+  height: 182px;
   line-height: 35px;
-  background-color: #f3f3f3;
+  background: url(../img/city.png) center;
 }
 .topbg-box {
   position: relative;
@@ -64,19 +68,33 @@ header li a:hover {
   width: 100%;
 }
 .login-row {
-  margin-top: 5px;
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 9px;
+}
+.login-row span {
+  display: inline-block;
+  width: 55px;
+}
+.login-row input {
+  width: 150px;
+  margin-left: 5px;
+  border-radius: 2px;
+}
+.login-row .small-info,
+.login-row .login-in,
+.login-row .register {
+  display: inline-block;
+  width: 120px;
+}
+.login-row .login-in,
+.login-row .register {
+  cursor: pointer;
 }
 .login-box h2 {
   height: 40px;
   line-height: 40px;
-  border-bottom: 1px solid red;
-}
-.login-box button {
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  background-color: #ededed;
+  border-bottom: 1px solid #E6E7E9;
 }
 
 .sign-up {
@@ -86,6 +104,29 @@ header li a:hover {
 .register {
   color: green;
 }
+.login-btn,
+.register-btn {
+  margin: 0 auto;
+  width: 100px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #E6E7E9;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+  opacity: .9;
+}
+.login-btn:hover,
+.register-btn:hover {
+  opacity: 1;
+  font-weight: bold;
+}
+.login-box .tip {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: red;
+}
 /* 主内容 */
 .main {
   min-height: 600px;
@@ -94,9 +135,13 @@ header li a:hover {
 .main article {
   float: left;
   margin-top: 10px;
+  border-top: 1px solid #E6E7E9;
   width: 600px;
   padding: 20px;
   background-color: white;
+}
+.main article:first-child {
+  border-top: none;
 }
 .main article:last-child:after {
   content: '';
@@ -173,10 +218,11 @@ header li a:hover {
 .reviews-three {
   margin-top: 20px;
   width: 620px;
-  height: 30px;
+  height: 60px;
   text-align: center;
-  line-height: 30px;
+  line-height: 60px;
   background-color: red;
+  color: #000;
 }
 .reviews-four {
   margin-top: 20px;
@@ -215,6 +261,28 @@ header li a:hover {
   color: #fff;
 }
 
+
+/* 中间展示 */
+.banner {
+  height: 60px;
+  background-color: #f8f9f9;
+  line-height: 60px;
+  border-top: 1px solid #E6E7E9;
+  border-bottom: 1px solid #E6E7E9;
+  text-align: center;
+}
+.banner div {
+  position: relative;
+  width: 1112px;
+  height: 100%;
+  margin: 0 auto;
+}
+.banner .abso {
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  font-size: 12px;
+}
 
 footer {
   width: 100%;

@@ -28,7 +28,7 @@
     <div class="review-submit">提交</div>
   </div>
   {% else %}
-  <div class="reviews-three">你还没有登录,请先登录</div>
+  <div class="reviews-three">登录后才能查看留言</div>
   {% endif %}
 
   <div class="reviews-box">
@@ -45,12 +45,13 @@
   </div> -->
 
   </div>
-
+  {% if userInfo._id %}
   <div class="reviews-pages">
     <div class="previous"><a href="">上一页</a></div>
-    <div>hh</div>
+    <div></div>
     <div class="next"><a href="">下一页</a></div>
   </div>
+  {% endif %}
 
 <script src="/public/js/comment.js"></script>
 

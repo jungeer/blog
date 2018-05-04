@@ -26,7 +26,7 @@ router.get('/', (req, res, next) => {
   data.category = req.query.category || ''
   data.count = 0
   data.page = Number(req.query.page || 1)
-  data.limit = 2
+  data.limit = 3
   data.pages = 0
 
   let where = {}
