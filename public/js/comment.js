@@ -79,7 +79,7 @@ function renderComment() {
       html += `
       <div class="reviews-five">
         <div class="reviews-five-head">
-          <span>用户:${comments[i].username}</span>
+          <span class="reviews-five-user">${comments[i].username}</span>
           <span>${formatDate(comments[i].postTime)}</span>
         </div>
         <div class="reviews-five-content">

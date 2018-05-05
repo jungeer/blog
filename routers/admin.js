@@ -32,7 +32,7 @@ router.get('/user', (req, res, next) => {
   */
 
   let page = Number(req.query.page || 1)
-  let limit = 10
+  let limit = 20
   let pages = 0
 
   User.count().then((count) => {

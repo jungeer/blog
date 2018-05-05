@@ -6,6 +6,10 @@ html {
   font-family: "Raleway-SemiBold", "Helvetica Neue",Helvetica,Arial,sans-serif;
   color: #6c7380;
 }
+body {
+  min-width: 1112px;
+  background: url(../img/bg.jpg);
+}
 .topbg {
   height: 182px;
   line-height: 35px;
@@ -23,6 +27,7 @@ html {
 .container {
   width: 1112px;
   margin: 20px auto;
+  margin-bottom: 100px;
 }
 .main-title {
   width: 100%;
@@ -48,11 +53,7 @@ header a {
   color: black;
 }
 header li a:hover {
-  background-color: #1553a4;
-  color: #fff;
-}
-.focus {
-  background-color: #1553a4;
+  background-color: red;
   color: #fff;
 }
 /* 登录注册面板 */
@@ -66,6 +67,8 @@ header li a:hover {
 }
 .login-box {
   width: 100%;
+  height: 250px;
+  text-align: center;
 }
 .login-row {
   width: 250px;
@@ -126,6 +129,14 @@ header li a:hover {
   width: 100%;
   text-align: center;
   color: red;
+}
+
+.highlight {
+  background-color: #1553a4;
+  color: #fff;
+}
+.focus {
+  background-color: red;
 }
 /* 主内容 */
 .main {
@@ -206,14 +217,15 @@ header li a:hover {
 }
 .review {
   flex-grow: 1;
-  border: 1px solid red;
+  border: 1px solid #E6E7E9;
+  border-radius: 5px;
   resize: none;
 }
 .review-submit {
   width: 100px;
   line-height: 100px;
   text-align: center;
-  background-color: blue;
+  background-color: #39414a;
 }
 .reviews-three {
   margin-top: 20px;
@@ -234,11 +246,20 @@ header li a:hover {
   display: flex;
   justify-content: space-between;
 }
+.reviews-five-user {
+  font-size: 18px;
+  font-weight: bold;
+}
 .reviews-five-content {
-  margin-top: 10px;
+  margin-top: 23px;
+  padding-bottom: 20px;
+  padding-left: 25px;
+  letter-spacing: .5px;
+  border-bottom: 3px solid #fff;
+  /* #E6E7E9 */
 }
 .reviews-pages {
-  margin-top: 10px;
+  margin-top: 35px;
   display: flex;
   width: 620px;
   justify-content: space-between;
@@ -264,6 +285,7 @@ header li a:hover {
 
 /* 中间展示 */
 .banner {
+  margin-top: 20px;
   height: 60px;
   background-color: #f8f9f9;
   line-height: 60px;
@@ -282,6 +304,26 @@ header li a:hover {
   top: 1px;
   right: 1px;
   font-size: 12px;
+}
+/* 分类 */
+.cate {
+  margin-top: 50px;
+  text-align: justify;
+}
+.cate ul li {
+  display: inline-block;
+  border-right: 1px solid #E6E7E9;
+}
+.cate a {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+  color: #39414a;
+  font-size: 13.5px;
+}
+.cate a:hover {
+  background-color: #1553a4;
+  color: #fff;
 }
 
 footer {

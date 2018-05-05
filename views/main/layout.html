@@ -25,16 +25,16 @@
         {% if category === '' %}
         <li><a href="/" class="focus">首页</a></li>
         {% else %}
-        <li><a href="/">首页</a></li>
+        <li><a href="/" class="highlight">首页</a></li>
         {% endif %}
 
-        {% for cate in categories %}
+        <!-- {% for cate in categories %}
           {% if category === cate.id %}
             <li><a href="/?category={{cate.id}}" class="focus">{{ cate.name }}</a></li>
           {% else %}
             <li><a href="/?category={{cate.id}}">{{ cate.name }}</a></li>
           {% endif %}
-        {% endfor %}
+        {% endfor %} -->
       </ul>
     </header>
     <section class="main">
@@ -79,6 +79,18 @@
         </div>
 
         {% endif %}
+        <div class="login-box cate">
+          <h2>文章分类</h2>
+          <ul>
+            {% for cate in categories %}
+              {% if category === cate.id %}
+                <li><a href="/?category={{cate.id}}" class="focus">{{ cate.name }}</a></li>
+              {% else %}
+                <li><a href="/?category={{cate.id}}">{{ cate.name }}</a></li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
 
       </aside>
     </section>
